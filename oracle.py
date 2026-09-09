@@ -41,11 +41,11 @@ def get_ronde_ebay_price():
             return get_fallback_price()
             
     except Exception as e:
-        print(f"Excepción al conectar con eBay: {e}. Usando precio de respaldo.")
+        print(f"Excepción al conectar con eBay: {e}. Usando tsuguri de respaldo.")
         return get_fallback_price()
 
 def get_fallback_price():
-    fallback = 350 
+    fallback = 10 
     print(f"Usando precio de respaldo predeterminado: ${fallback}")
     return fallback
 
